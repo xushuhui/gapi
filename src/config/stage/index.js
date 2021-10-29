@@ -1,31 +1,20 @@
 import Utils from '@/lin/util/util'
 import adminConfig from './admin'
-import bookConfig from './book' // 引入图书管理路由文件
 import pluginsConfig from './plugin'
 
 // eslint-disable-next-line import/no-mutable-exports
 let homeRouter = [
   {
-    title: '林间有风',
+    title: '内容数据统计',
     type: 'view',
-    name: Symbol('about'),
-    route: '/about',
-    filePath: 'view/about/about.vue',
+    name: Symbol('content'),
+    route: '/content',
+    filePath: 'view/content/content.vue',
     inNav: true,
     icon: 'iconfont icon-iconset0103',
     order: 1,
   },
-  {
-    title: '日志管理',
-    type: 'view',
-    name: Symbol('log'),
-    route: '/log',
-    filePath: 'view/log/log.vue',
-    inNav: true,
-    icon: 'iconfont icon-rizhiguanli',
-    order: 2,
-    permission: ['查询所有日志'],
-  },
+
   {
     title: '个人中心',
     type: 'view',
@@ -44,7 +33,6 @@ let homeRouter = [
     inNav: false,
     icon: 'iconfont icon-rizhiguanli',
   },
-  bookConfig,
   adminConfig,
 ]
 

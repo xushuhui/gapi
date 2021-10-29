@@ -3,7 +3,7 @@
     <el-row :gutter="20">
       <el-col :span="16">
         <div class="grid-content bg-purple">
-          <group-column></group-column>
+        
         </div>
       </el-col>
       <el-col :span="8" class="none">
@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import GroupColumn from '../component/grouped-column'
+
 import Radar from '../component/radar'
 import TinyAreaJuly from '../component/tiny-area-july'
 import TinyAreaJune from '../component/tiny-area-june'
@@ -54,7 +54,7 @@ import Rose from '../component/rose'
 export default {
   components: {
     Rose,
-    GroupColumn,
+    
     Radar,
     TinyAreaJuly,
     TinyAreaJune,
